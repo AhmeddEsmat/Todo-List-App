@@ -1,9 +1,21 @@
 .todo {
-    padding: 10px;
     margin: 0.2rem 0;
     width: 70%;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.todo-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-span {
+    padding: 10px;
+    width: 88%;
+    text-align: left;
+}
+.todo-span:hover {
+    cursor: pointer;
 }
 .todo-complete {
     opacity: 0.6;
@@ -14,11 +26,25 @@
 .todo-incomplete{
     background-color: white;
 }
-.todo-all {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .todo-text {
     font-size: 1.2rem;
+}
+.icons {
+    padding: 10px;
+}
+.edit-icon {
+    color: #000;
+    cursor: pointer;
+}
+.edit-icon:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.delete-icon {
+    color: red;
+    cursor: pointer;
+}
+.delete-icon:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
 }

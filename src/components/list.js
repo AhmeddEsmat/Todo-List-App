@@ -31,8 +31,8 @@ const List = ({ items, completeItem, editItem, deleteItem }) => {
       key={index}
     >
       <div className="todo-all">
-        <div className="todo-span">
-          <span onClick={() => completeItem(item.id)} className="todo-text">
+        <div className="todo-span" onClick={() => completeItem(item.id)}>
+          <span className="todo-text">
             {item.value}
           </span>
         </div>
@@ -47,7 +47,7 @@ const List = ({ items, completeItem, editItem, deleteItem }) => {
           />
         </div>
       </div>
-      <div className="icons"></div>
+      {/* <div className="icons"></div> */}
     </div>
   ));
 };
